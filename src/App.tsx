@@ -1,5 +1,11 @@
+import Navbar from "./component/Navbar";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div className="font-sans">
+      <Navbar />
+    </div>
+  );
 };
 
 export default App;
