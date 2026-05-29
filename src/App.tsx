@@ -1,9 +1,11 @@
-import Navbar from "./component/Navbar";
+import HamburgerNav from "./component/navbar/HamburgerNav";
+import Navbar from "./component/navbar/Navbar";
 
 const App = () => {
   return (
-    <div className="font-sans">
+    <div className="font-mark-pro">
       <Navbar />
+      <HamburgerNav />
     </div>
   );
 };
