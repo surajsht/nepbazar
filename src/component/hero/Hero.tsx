@@ -26,20 +26,20 @@ const Hero = () => {
               <img
                 src={hero.img}
                 alt={hero.title}
-                className="w-full h-[80vh] object-cover"
+                className="w-full h-96 md:h-[60vh] lg:h-[80vh] object-cover"
               />
 
               <div className="absolute top-1/2 left-0 -translate-y-1/2 w-full">
                 <div className="container mx-auto px-4">
-                  <div className="w-full md:w-1/2 space-y-6">
+                  <div className="w-full md:w-1/2 space-y-4 md:space-y-6">
                     <span className="text-lg font-medium">
                       {hero["sub-title"]}
                     </span>
-                    <h2 className="text-4xl md:text-7xl font-bold capitalize">
+                    <h2 className="text-4xl lg:text-7xl font-bold capitalize">
                       {hero.title}
                     </h2>
 
-                    <button className="relative group overflow-hidden px-4 py-2 md:px-6 md:py-3  border-2 border-black">
+                    <button className="relative group overflow-hidden px-4 py-2 lg:px-6 lg:py-3  border-2 border-black">
                       <span className="block transition-transform duration-300 group-hover:-translate-y-9">
                         Shop Now
                       </span>
