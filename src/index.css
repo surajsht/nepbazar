@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.featured-category .swiper {
+  padding-bottom: 52px;
+}
+
+.featured-category .swiper-pagination {
+  bottom: -0 !important;
+}

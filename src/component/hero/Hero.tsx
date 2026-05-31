@@ -40,8 +40,8 @@ const Hero = () => {
                     </h2>
 
                     <button className="relative group overflow-hidden px-4 py-2 lg:px-6 lg:py-3  border-2 border-black">
-                      <span className="block transition-transform duration-300 group-hover:-translate-y-9">
-                        Shop Now
+                      <span className="block transition-transform duration-300 group-hover:-translate-y-9 capitalize">
+                        {hero["button-label"]}
                       </span>
 
                       <span
