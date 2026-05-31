@@ -15,57 +15,55 @@ const FeaturedCategory = () => {
         </p>
       </div>
 
-      <div>
-        <Swiper
-          modules={[Pagination, A11y, Autoplay]}
-          spaceBetween={24}
-          loop={true}
-          speed={900}
-          centeredSlides={false}
-          pagination={{ clickable: true }}
-          autoplay={{
-            delay: 4500,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-          breakpoints={{
-            0: {
-              slidesPerView: 2,
-            },
-            768: {
-              slidesPerView: 3,
-            },
-            1024: {
-              slidesPerView: 4,
-            },
-            1199: {
-              slidesPerView: 5,
-            },
-            1600: {
-              slidesPerView: 6,
-            },
-          }}
-        >
-          {FeaturedCategoryData.map((featured) => {
-            return (
-              <SwiperSlide key={featured.id}>
-                <div className="flex flex-col items-center text-center">
-                  <div className="h-48 w-48 rounded-full overflow-hidden group">
-                    <img
-                      src={featured.img}
-                      alt={featured.title}
-                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-125"
-                    />
-                  </div>
-                  <h3 className="font-semibold capitalize mt-6 text-base">
-                    {featured.title}
-                  </h3>
+      <Swiper
+        modules={[Pagination, A11y, Autoplay]}
+        spaceBetween={24}
+        loop={true}
+        speed={900}
+        centeredSlides={false}
+        pagination={{ clickable: true }}
+        autoplay={{
+          delay: 4500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        breakpoints={{
+          0: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+          1199: {
+            slidesPerView: 5,
+          },
+          1600: {
+            slidesPerView: 6,
+          },
+        }}
+      >
+        {FeaturedCategoryData.map((featured) => {
+          return (
+            <SwiperSlide key={featured.id}>
+              <div className="flex flex-col items-center text-center">
+                <div className="w-full max-w-44 aspect-square rounded-full overflow-hidden group mx-auto">
+                  <img
+                    src={featured.img}
+                    alt={featured.title}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-125"
+                  />
                 </div>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </div>
+                <h3 className="font-semibold capitalize mt-6 text-base">
+                  {featured.title}
+                </h3>
+              </div>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </section>
   );
 };
