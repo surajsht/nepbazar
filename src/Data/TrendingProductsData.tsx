@@ -28,3 +28,5 @@ const TrendingProductsData = [
     img: "best-selling/best-selling-8.jpg",
   },
 ];
+
+export default TrendingProductsData;

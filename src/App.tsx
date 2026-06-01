@@ -3,6 +3,7 @@ import FeaturedCategory from "./component/featuredCategory/FeaturedCategory";
 import Hero from "./component/hero/Hero";
 import HamburgerNav from "./component/navbar/HamburgerNav";
 import Navbar from "./component/navbar/Navbar";
+import PromoBanner from "./component/promoBanner/PromoBanner";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Hero />
       <FeaturedCategory />
       <BestSelling />
+      <PromoBanner />
     </div>
   );
 };
