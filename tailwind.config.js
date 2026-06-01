@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "mark-pro": ["Mark Pro"],
+        instrument: ["Instrument Sans", "sans-serif"],
       },
     },
   },

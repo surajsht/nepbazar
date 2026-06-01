@@ -29,9 +29,6 @@ const FeaturedCategory = () => {
         }}
         breakpoints={{
           0: {
-            slidesPerView: 2,
-          },
-          768: {
             slidesPerView: 3,
           },
           1024: {
@@ -56,7 +53,7 @@ const FeaturedCategory = () => {
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-125"
                   />
                 </div>
-                <h3 className="font-semibold capitalize mt-6 text-base">
+                <h3 className="font-semibold capitalize mt-4 text-base">
                   {featured.title}
                 </h3>
               </div>
