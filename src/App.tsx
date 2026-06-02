@@ -5,6 +5,7 @@ import HamburgerNav from "./component/navbar/HamburgerNav";
 import Navbar from "./component/navbar/Navbar";
 import PromoBanner from "./component/promoBanner/PromoBanner";
 import PromoMarquee from "./component/PromoMarquee";
+import TrendingProducts from "./component/TrendingProducts";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <BestSelling />
       <PromoBanner />
       <PromoMarquee />
+      <TrendingProducts />
     </div>
   );
 };
